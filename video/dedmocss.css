@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f5fff5;
+  }
+  
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .discount-badge {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+  }
+  
+  p {
+    color: #666;
+  }
+  
+  .search-bar {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .search-bar input {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+  }
+  
+  .search-bar button {
+    padding: 0.8rem 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Featured Items Section */
+  .featured-items {
+    padding: 2rem;
+    background-color: #fff;
+  }
+  
+  .featured-items h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .item-list {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .item-card {
+    background-color: #f5fff5;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 20%;
+    text-align: center;
+  }
+  
+  .item-image img {
+    max-width: 100%;
+    border-radius: 50%;
+  }
+  
+  .price-badge {
+    background-color: #28a745;
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    position: relative;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .item-info h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0 0.5rem;
+  }
+  
+  .item-info p {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .ratings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+  
+  .avatars img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+  
+  .order-btn {
+    padding: 0.8rem 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  

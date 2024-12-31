@@ -1,0 +1,51 @@
+body{
+    padding: 0;
+    margin: 0;
+    /* display: flex; */
+    justify-content: center;
+    /* align-items: center;
+    height: 200vh; */
+    /* background-color: aqua; */
+}
+
+
+.intro{
+    padding: 20px;
+    height: 400px;
+    background-color: aliceblue;
+    border-radius: 30px;
+    /* border: 3px solid black; */
+    width: 1236px;
+    margin: 67px auto;
+    height: 500px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    justify-content: space-between;
+    display: flex;
+
+}
+
+.text1s{
+    max-width: 50%;
+    
+}
+
+
+
+
+
+.pizza-image{
+    /* display: flex; */
+    /* float: right; */
+    position: relative;
+    top: -138px;
+    max-width: 50%;
+
+    
+}
+
+.pizza-image img{
+    position:relative
+    top: -60px;
+    width: 100%;
+
+}
