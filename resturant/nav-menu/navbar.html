@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins&display=swap"rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .nav__logo {
+            font-size: 1.5rem;
+            font-family: poppins;
+        }
+
+
+        .nav {
+            height: 5rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            overflow: hidden;
+            z-index: 1000;
+            background-color: aliceblue;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+
+        .nav_menu ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav_menu ul li {
+            list-style: none;
+
+        }
+
+        .nav_menu ul li a {
+            text-decoration: none;
+            color: #000000;
+            padding: 1.4rem;
+            display: block;
+            font-family: Poppins;
+            font-size: 1.5rem;
+
+        }
+
+        .nav_menu li:hover {
+            background-color: rgb(255, 243, 9);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav__logo">Tholuwa Pakghar</div>
+            <a href="#" class="nav__hamburger">
+                <span class="nav__hamburger__line"></span>
+                <span class="nav__hamburger__line"></span>
+                <span class="nav__hamburger__line"></span>
+            </a>
+            <div class="nav_menu">
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="/nav-menu/bar.html">Bar</a></li>
+                    <li><a href="/nav-menu/reservation.html">Reservation</a></li>
+                    <li><a href="/nav-menu/events.html">Events</a></li>
+                    <li><a href="/nav-menu/contacts.html">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+    </header>
+</body>
+
+</html>

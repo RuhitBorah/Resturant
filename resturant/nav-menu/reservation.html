@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="events_style.css">
+    <style>
+        h2 {
+            text-align: center;
+        }
+        .link {
+            border: black solid 2px;
+            margin: 46%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Empty header where the navbar will load -->
+    <header></header>
+    <br><br><br>
+
+    <h2>Events</h2>
+    <a class="link" href="/">Back to home</a>
+
+    <!-- JavaScript to load the navbar -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Fetch the navbar.html file and load it into the header
+            fetch("navbar.html")
+                .then((response) => response.text())
+                .then((html) => {
+                    document.querySelector("header").innerHTML = html;
+                })
+                .catch((error) => {
+                    console.error("Error loading the navbar:", error);
+                });
+        });
+    </script>
+</body>
+</html>
