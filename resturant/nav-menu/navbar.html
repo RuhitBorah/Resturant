@@ -8,13 +8,18 @@
     <title>Document</title>
     <style>
         .nav__logo {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
+            font-family: poppins;
+        }
+        .nav__logo a{
+            text-decoration: none;
+            font-size: 1.3rem;
             font-family: poppins;
         }
 
 
         .nav {
-            height: 5rem;
+            height: 4rem;
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -23,7 +28,12 @@
             width: 100%;
             overflow: hidden;
             z-index: 1000;
-            background-color: aliceblue;
+            background-color: none;
+            transition-duration: 0s;
+            backdrop-filter: blur(20px);
+            
+        }
+        .nav:hover{
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
         }
 
@@ -42,10 +52,10 @@
         .nav_menu ul li a {
             text-decoration: none;
             color: #000000;
-            padding: 1.4rem;
+            padding: 1.3rem;
             display: block;
             font-family: Poppins;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
 
         }
 
@@ -58,7 +68,9 @@
 <body>
     <header>
         <nav class="nav">
-            <div class="nav__logo">Tholuwa Pakghar</div>
+            <div class="nav__logo">
+                <a href="/">Tholuwa Pakghar</a>
+            </div>
             <a href="#" class="nav__hamburger">
                 <span class="nav__hamburger__line"></span>
                 <span class="nav__hamburger__line"></span>
@@ -66,7 +78,7 @@
             </a>
             <div class="nav_menu">
                 <ul>
-                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="/nav-menu/menu.html">Menu</a></li>
                     <li><a href="/nav-menu/bar.html">Bar</a></li>
                     <li><a href="/nav-menu/reservation.html">Reservation</a></li>
                     <li><a href="/nav-menu/events.html">Events</a></li>

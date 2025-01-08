@@ -12,25 +12,8 @@
 </head>
 
 <body>
-    <header>
-        <nav class="nav">
-            <div class="nav__logo">Tholuwa Pakghar</div>
-            <a href="#" class="nav__hamburger">
-                <span class="nav__hamburger__line"></span>
-                <span class="nav__hamburger__line"></span>
-                <span class="nav__hamburger__line"></span>
-              </a>
-              <div class="nav_menu">
-                <ul>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="/nav-menu/bar.html">Bar</a></li>
-                    <li><a href="/nav-menu/reservation.html">Reservation</a></li>
-                    <li><a href="/nav-menu/events.html">Events</a></li>
-                    <li><a href="/nav-menu/contacts.html">Contacts</a></li>
-                </ul>
-              </div>
-        </nav>
-    </header>
+    
+    <header> </header>
     
     <main>
         <section class="intro">
@@ -56,10 +39,12 @@
                     <div class="item-cart-info">
                         <div class="item-price1">
                             <h2>₹250</h2>
-                        </div>
+                        </div >
+                        <div class="text-container" >
                         <h2>Margheta Pizza</h2>
                         <p>A popular contemporary legend holds that the archetypal pizza Margherita was invented in June
                             1889, when the Royal Palace of </p>
+                        </div>
                         <div class="Rating">
                             <span>⭐ 5.0</span>
                             <div class="rating-avater">
@@ -72,18 +57,20 @@
                     </div>
                 </div>
                 <div class="card-1">
-                    <div class="item-image2">
+                    <div class="item-image">
                         <img src="Assets/burgur.png" alt="burgur">
                     </div>
                     <div class="item-cart-info">
                         <div class="item-price1">
                             <h2>₹250</h2>
                         </div>
-                        <h2>Margheta Pizza</h2>
+                        <div class="text-container" >
+                        <h2>Cheese Burgur</h2>
                         <p>A popular contemporary legend holds that the archetypal pizza Margherita was invented in June
                             1889, when the Royal Palace of </p>
+                        </div>
                         <div class="Rating">
-                            <span>⭐ 5.0</span>
+                            <span>⭐ 4.8</span>
                             <div class="rating-avater">
                                 <img src="Assets/Rating-Avater/avater1.png" alt="user1">
                                 <img src="Assets/Rating-Avater/avater2.png" alt="user2">
@@ -100,11 +87,13 @@
                         <div class="item-price1">
                             <h2>₹250</h2>
                         </div>
-                        <h2>Margheta Pizza</h2>
+                        <div class="text-container" >
+                        <h2>Chicken Leg-Piece</h2>
                         <p>A popular contemporary legend holds that the archetypal pizza Margherita was invented in June
                             1889, when the Royal Palace of </p>
+                        </div>
                         <div class="Rating">
-                            <span>⭐ 5.0</span>
+                            <span>⭐ 3.9</span>
                             <div class="rating-avater">
                                 <img src="Assets/Rating-Avater/avater1.png" alt="user1">
                                 <img src="Assets/Rating-Avater/avater2.png" alt="user2">
@@ -121,11 +110,13 @@
                         <div class="item-price1">
                             <h2>₹250</h2>
                         </div>
-                        <h2>Margheta Pizza</h2>
+                        <div class="text-container" >
+                        <h2>Chicken Fired Rice</h2>
                         <p>A popular contemporary legend holds that the archetypal pizza Margherita was invented in June
                             1889, when the Royal Palace of </p>
+                        </div>
                         <div class="Rating">
-                            <span>⭐ 5.0</span>
+                            <span>⭐ 4.5</span>
                             <div class="rating-avater">
                                 <img src="Assets/Rating-Avater/avater1.png" alt="user1">
                                 <img src="Assets/Rating-Avater/avater2.png" alt="user2">
@@ -142,7 +133,7 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Fetch the navbar.html file and load it into the header
-            fetch("navbar.html")
+            fetch("nav-menu/navbar.html")
                 .then((response) => response.text())
                 .then((html) => {
                     document.querySelector("header").innerHTML = html;

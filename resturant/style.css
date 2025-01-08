@@ -3,8 +3,12 @@ body {
     margin: 0;
     justify-content: center;
     font-family: 'Poppins';
-    overflow: auto;
+    overflow: scroll;
     padding-top: 3rem;
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Edge */
 }
 
 /* header {
@@ -76,6 +80,24 @@ h2 {
 .order-buttom:hover {
     background-color: #e6f6f6;
     box-shadow: 0 9px 7px -3px rgba(0, 0, 0, 1.3);
+}
+
+For creating the text overflow
+
+.text-container{
+    width: 324px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text-container p {
+    font-size: 16px;
+    line-height: 1.5; /* Adjust line height for readability */
+    display: -webkit-box; /* Flex-like layout for multi-line truncation */
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical; /* Set box orientation to vertical */
+    overflow: hidden; /* Hide overflowing content */
+    text-overflow: ellipsis; /* Add ellipsis to the truncated text */
 }
 
 .pizza-image {
