@@ -80,7 +80,8 @@ h2 {
 }
 
 .text-container h2{
-    font-size: 2rem;
+    font-family: Poppins;
+    font-size: 1.5rem;
 }
 
 .text-container p {
@@ -105,6 +106,22 @@ h2 {
     width: 81%;
     
 }
+
+
+.feature-items h2 {
+    font-family: Poppins;
+    text-align: center;
+    font-family: Charmonman;
+}
+
+.feature-items p{
+    font-size: 1.rem;
+    text-align: center;
+    position: relative;
+    top: -17px;
+    
+}
+
 
 
 .item-list {
@@ -146,7 +163,6 @@ h2 {
 
 .item-price1 h2 {
     font-size: 1.5rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border: none;
     position: relative;
     text-align: center;

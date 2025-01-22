@@ -1,0 +1,134 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow: scroll;
+    
+}
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Edge */
+}
+
+.contact1{
+    margin-top: 78px;
+    margin-inline: 23px 30px;
+    border-radius: 12px;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.3);
+    background-color: rgba(164, 240, 244, 0.222);
+    height: 120px;
+}
+
+.contact1 h2{
+    font-size: 1.7rem;
+    text-decoration: underline;
+    font-family: poppins,serif;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    text-wrap-style: warp;
+}
+
+.contactform1{
+    /* border: solid 1.5px; */
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    
+}
+
+.contactform11 {
+    flex: 1; /* Make both sections take equal space */
+    max-width: 48%; /* Adjust width, ensuring responsiveness */
+    box-sizing: border-box; /* Include padding and border in the width */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: poppins;
+    font-size: 1rem;
+}
+
+.contactform112{
+    flex: 1;  
+}
+
+
+
+.address-main #p1{
+    font-family: poppins;
+    font-size: 1.2rem;
+    margin-top: 23px;
+}
+.address-main #p2{
+    font-family: poppins;
+    font-size: 1.2rem;
+    margin-top: 23px;
+}
+
+
+
+.address-main h2{
+    font-size: 1.5rem;
+}
+.contactmain{
+    margin-left: 13%;
+    margin-right: 22%;
+    padding-top: 19px;
+    padding-bottom: 21px;
+    font-size: 1.1rem;
+    padding-inline: 86px 86px;
+    border: none;
+    box-shadow:0 1px 5px rgba(0, 0, 0, 0.3) ;
+    border-radius: 20px;
+
+}
+
+
+
+
+.contactform112 h3{
+    text-align: center;
+    font-family: poppins,serif;
+    font-size: 1.3rem;
+
+    
+}
+
+
+
+.input-box input, textarea {
+    position: relative;
+    font-family: poppins;
+    font-size: 12px;
+    height: 38px;
+    width:  100%;
+    border-radius: 6px;
+    margin-top: 10px;
+    padding: 0 2px;
+    outline:none;
+
+}
+.map-section {
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 800px;
+    text-align: center;
+    background-color: #f9f9f9; /* Optional background */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+}
+
+/* Styling the heading inside the map section */
+.map-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Styling the iframe */
+.map-section iframe {
+    width: 100%; /* Full width for responsiveness */
+    height: 400px; /* Set a height */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+}

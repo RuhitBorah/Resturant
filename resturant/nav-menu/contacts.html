@@ -1,35 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins&display=swap"rel="stylesheet">
-    <title>Menu</title>
-    <link rel="stylesheet" href="events_style.css">
-    <style>
-        h2 {
-            text-align: center;
-        }
-        .link {
-            border: black solid 2px;
-            margin: 46%;
-        }
-    </style>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact_style.css">
 </head>
-<body>
-    <!-- Empty header where the navbar will load -->
-    <header></header>
-    <br><br><br>
 
-    <h2>Contacts</h2>
-    <a class="link" href="/">Back to home</a>
+<body>
+    <!-- Header where the navbar will load -->
+    <header>
+    </header>
+
+    <main>
+        <!-- Section 1 -->
+        <section class="section_1">
+            <div class="contact1">
+                <h2>Contact Us</h2>
+            </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="section2">
+            <div class="contactform1">
+                <div class="contactform11">
+                    <div class="address-main">
+                        <h2>Our Address</h2>
+                        <p id="p1" >
+                            Mother Teresa Path<br>
+                            Naliapull, Podum Nagar 2<br>
+                            Dist: Dibrugarh, Assam
+                        </p>
+                        <p id="p2" >
+                            Lorem ipsum dolor sit amet consectetur <br>
+                            adipisicing elit. At, blanditiis. Quo!
+                        </p>
+
+                    </div>
+                </div>
+                <div class="contactform112">
+                    <div class="contactmain">
+                        <form action="/" method="post">
+                            <h3>Contact Form</h3>
+                            <div class="input-box">
+                                <label for="name">Enter your Name</label>
+                                <input id="name" type="text" name="name" required placeholder="Enter your full name">
+                            </div>
+                            <div class="input-box">
+                                <label for="email">Enter your Email</label>
+                                <input id="email" type="email" name="email" required placeholder="Enter your email">
+                            </div>
+                            <div class="input-box">
+                                <label for="phone_no">Enter your Phone no</label>
+                                <input id="phone_no" type="number" name="phone" placeholder="Phone No">
+                            </div>
+                            <div class="input-box">
+                                <label for="message">Enter your Message</label>
+                                <textarea name="message" id="message" cols="20" rows="3"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="map-section">
+            <h2>Our Location</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.7689957504276!2d94.9200561!3d27.4764502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37409965221c1ead%3A0x2d4c8a815b0a7b4b!2sIndian%20Weby!5e0!3m2!1sen!2sin!4v1736714094445!5m2!1sen!2sin"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </section>
+        
+    </main>
 
     <!-- JavaScript to load the navbar -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            // Fetch the navbar.html file and load it into the header
             fetch("navbar.html")
-                .then((response) => response.text())
+                .then((response) => {
+                    if (response.ok) {
+                        return response.text();
+                    }
+                    throw new Error("Failed to fetch navbar");
+                })
                 .then((html) => {
                     document.querySelector("header").innerHTML = html;
                 })
@@ -39,4 +98,5 @@
         });
     </script>
 </body>
+
 </html>
